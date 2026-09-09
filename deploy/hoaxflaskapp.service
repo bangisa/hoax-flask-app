@@ -1,0 +1,25 @@
+[Unit]
+Description=HoaxLens Gunicorn application
+After=network.target
+
+[Service]
+Type=simple
+User=hoaxflaskapp
+Group=hoaxflaskapp
+WorkingDirectory=/opt/hoaxflaskapp/current
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=1
+Environment=OPENBLAS_NUM_THREADS=1
+ExecStart=/opt/hoaxflaskapp/venv/bin/gunicorn --bind 127.0.0.1:18080 --workers 2 --threads 1 --timeout 120 --access-logfile - --error-logfile - app:app
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=40
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

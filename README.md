@@ -9,11 +9,21 @@
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost%20%2B%20ROS-2563EB)
 ![Inference](https://img.shields.io/badge/Workflow-Inference%20only-164E63)
 
-[Memulai](#memulai) · [Fitur](#fitur) · [Evaluasi](#evaluasi-model) · [Struktur](#struktur-repositori) · [API](#api-prediksi)
+[Live Website](#live-website) · [Memulai](#memulai) · [Fitur](#fitur) · [Evaluasi](#evaluasi-model) · [Struktur](#struktur-repositori) · [API](#api-prediksi)
 
 </div>
 
 ---
+
+## Live Website
+
+HoaxLens dapat digunakan langsung melalui website berikut:
+
+### [🌐 Buka HoaxLens →](https://hoaxflaskapp.isacool.my.id/)
+
+[Dashboard evaluasi](https://hoaxflaskapp.isacool.my.id/#evaluasi) · [Analisis berita](https://hoaxflaskapp.isacool.my.id/predict-page)
+
+Website menggunakan HTTPS. Masukkan teks berita berbahasa Indonesia untuk melihat prediksi model, atau jelajahi perbandingan hasil evaluasinya.
 
 ## Tentang HoaxLens
 
